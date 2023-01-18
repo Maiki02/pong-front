@@ -1,0 +1,30 @@
+<div class="section">
+    <div class="input-group mb-3" *ngIf="!isLogin">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" 
+        aria-label="Username" aria-describedby="basic-addon1" [formControl]="name">
+        <button class="btn btn-outline-secondary" type="button" 
+        id="button-addon2" (click)="sendNameToSave()">Enviar</button>
+    </div>
+
+    <div class="width-100 mb-3" *ngIf="isLogin">
+        <span class="title-name">Conectado como: {{name.value}}</span>
+    </div>
+
+    <div class="width-100 row-between">
+        <div>
+            <span *ngIf="isLoaderPlayers">Cargando jugadores...</span>
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="getPlayers()">Refrescar</button>
+    </div>
+
+    <ul class="width-100 player-list">
+        <li class="player" *ngFor="let player of players">
+            <span class="player-name">{{player}}</span>
+        </li>
+        
+    </ul>
+
+
+
+</div>

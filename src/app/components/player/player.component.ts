@@ -22,9 +22,7 @@ export class PlayerComponent {
   /*Escucha los enventos del teclado y ejecuta la acción correspondiente*/
   @HostListener('document:keydown', ['$event'])
   listenerKeyDown(event: KeyboardEvent) {
-    console.log(event);
     if(true){
-      console.log(event.key.toLowerCase());
       switch (event.key.toLowerCase()) {
         case 'arrowup': this.moveTo(-(MOVEMENT_PLAYER) - this.countKeyPress); 
         this.countKeyPress++; break;

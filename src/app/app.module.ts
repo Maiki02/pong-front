@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PlayerService } from './shared/services/player.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

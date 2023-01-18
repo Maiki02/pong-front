@@ -1,0 +1,33 @@
+.section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:8px;
+    height: 100%;
+}
+
+.title-name{
+    font-size: 24px;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.player-list{
+    gap:16px;
+}
+
+.player{
+    cursor: pointer;
+}
+
+.player-name{
+    font-size:20px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+.player-name:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}

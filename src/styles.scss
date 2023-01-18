@@ -5,3 +5,20 @@ body{
 }
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+
+*{
+    font-size: 16px;
+    color:#f1f1f1;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
