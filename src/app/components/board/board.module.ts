@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BoardComponent } from './board.component';
+import { PlayerModule } from '../player/player.module';
 
 
 
@@ -9,7 +10,8 @@ import { BoardComponent } from './board.component';
     BoardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PlayerModule
   ], exports: [
     BoardComponent
   ]
