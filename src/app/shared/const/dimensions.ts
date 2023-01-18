@@ -1,0 +1,5 @@
+export const WIDTH_PLAYER=10;
+
+export const WIDTH_BOARD=WIDTH_PLAYER*80;
+
+export const HEIGHT_BOARD=WIDTH_PLAYER*50;
