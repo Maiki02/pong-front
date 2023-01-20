@@ -3,7 +3,7 @@
         <!--<app-player class="player player-1" [ngStyle]="{top:positionPlayer1 + 'px'}" 
         (movePlayer)="movePlayer($event,1)"></app-player>-->
 
-        <app-player class="player player-2" [ngStyle]="{top:positionPlayer2 + 'px'}" 
+        <app-player class="player player-2" [ngStyle]="getCords(positionPlayer2)" 
         (movePlayer)="movePlayer($event, 2)" [positionY]="positionPlayer2"></app-player>
     </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Socket } from 'ngx-socket-io';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  constructor() {
-  }
+constructor(){}
 }

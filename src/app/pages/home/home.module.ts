@@ -5,7 +5,6 @@ import { BoardModule } from 'src/app/components/board/board.module';
 import { PlayersSectionModule } from 'src/app/components/players-section/players-section.module';
 
 
-
 @NgModule({
   declarations: [
     HomeComponent
@@ -13,7 +12,7 @@ import { PlayersSectionModule } from 'src/app/components/players-section/players
   imports: [
     CommonModule,
     BoardModule,
-    PlayersSectionModule
+    PlayersSectionModule,
   ], exports: [
     HomeComponent
   ]
