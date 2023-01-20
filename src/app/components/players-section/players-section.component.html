@@ -13,6 +13,7 @@
 
     <div class="width-100 row-between">
         <div>
+            <span *ngIf="message.length" >{{message}}</span>
             <span *ngIf="isLoaderPlayers">Cargando jugadores...</span>
         </div>
         <button type="button" class="btn btn-secondary" (click)="getPlayers()">Refrescar</button>
